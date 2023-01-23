@@ -95,10 +95,20 @@ not, the original string is returned
 */
 
 function newString(str){
-
+    if(str.length >= 3){
+        last = str.split('').slice(-3, str.length).join('');
+        first = str.split('').slice(0,3).join('');
+        return first + last;
+    }
+    else {
+        return str;
+    }
 }
 
-console.log(newString('Hello World'))
+// console.log('Hello World => ' , newString('Hello World'))
+// console.log('nope => ' , newString('nope'))
+// console.log('abc => '  , newString('abc'))
+// console.log('ab => ' , newString('ab'))
 
 
 /* Exercise 2.2:
@@ -106,10 +116,36 @@ console.log(newString('Hello World'))
 Write a JavaScript program to extract the first half of a string of even length.
 */
 
+function evenString(str){
+    if(str.length % 2 === 0){
+        return str.slice(0,str.length / 2) 
+    }
+    else {
+        return `String is not even , ${str.length}`
+    }
+}
+
+// console.log('Hello World => ' , evenString('Hello World'))
+// console.log('1234 => ' , evenString('1234'))
+// console.log('wind => ' , evenString('wind'))
+
+
 /* Exercise 2.3:
 --------------
 Write a JavaScript program to concatenate two strings except their first character.
 */
+
+function conCat(a,b){
+    arrayA = a.split('');
+    arrayA.splice(0,1);
+    arrayB = b.split('');
+    arrayB.splice(0,1);
+    return arrayA.join('') + (' ') + arrayB.join('')
+}
+
+// console.log('Yhellow, Sworld => ' , conCat('Yhellow', 'Sworld'))
+// console.log('Swind, Swaker => ' , conCat('Swind', 'Swaker'))
+
 
 /* Exercise 2.4:
 --------------
