@@ -1,4 +1,3 @@
-console.log('hello world')
 
 /* Exercise 1.1:
 --------------
@@ -105,6 +104,8 @@ function newString(str){
     }
 }
 
+newString('ab')
+
 // console.log('Hello World => ' , newString('Hello World'))
 // console.log('nope => ' , newString('nope'))
 // console.log('abc => '  , newString('abc'))
@@ -152,7 +153,25 @@ function conCat(a,b){
 Given two values, write a JavaScript program to find out which one is nearest to 100
 */
 
+function nearest(num1, num2){
+    const a = 100 - num1;
+    const b = 100 - num2;
+    if(a < b){
+        return `${num1} is closer to 100 than ${num2}`;
+    }
+    else {
+        return `${num2} is closer to 100 than ${num1}`;
+    }
+}
+
+// console.log(nearest(20, 80))
+// console.log(nearest(99, 100))
+// console.log(nearest(96, 95))
+
+
 /* Exercise 2.5:
 --------------
 Write a JavaScript program to check a given string contains 2 to 4 occurrences of a specified character
 */
+
+// filter()
