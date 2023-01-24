@@ -104,7 +104,7 @@ function newString(str){
     }
 }
 
-newString('ab')
+// newString('ab')
 
 // console.log('Hello World => ' , newString('Hello World'))
 // console.log('nope => ' , newString('nope'))
@@ -175,3 +175,29 @@ Write a JavaScript program to check a given string contains 2 to 4 occurrences o
 */
 
 // filter()
+
+/*Exercise 3.1:
+------------
+Write a JavaScript program to find the number of even digits in a an array of integers
+*/
+
+/*Exercise 3.2:
+------------
+Write a JavaScript program to find the number of even values up to a given number
+*/
+
+/*Exercise 3.3:
+------------
+Write a JavaScript program to check whether a given array of integers is sorted in ascending order
+*/
+
+/*Exercise 3.4:
+------------
+Write a JavaScript program to get the largest even number from an array of integers.
+*/
+
+/*Exercise 3.5:
+------------
+Write a JavaScript program to replace the first digit in a string (should contain at least one
+digit) with a $ character.
+*/
